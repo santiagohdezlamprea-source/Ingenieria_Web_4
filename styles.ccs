@@ -1,0 +1,229 @@
+/* ---------- Tokens ---------- */
+:root {
+  --bg-dark: #12181f;
+  --bg-light: #f7f5f0;
+  --text-primary: #1b222a;
+  --text-inverse: #f7f5f0;
+  --accent: #3aafa9;
+  --accent-soft: #d9f0ee;
+  --border: #dcd8cf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--text-primary);
+  background: var(--bg-light);
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0 0 0.5rem;
+}
+
+/* ---------- Header / Navbar ---------- */
+.site-header {
+  background: var(--bg-dark);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.brand {
+  color: var(--text-inverse);
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--text-inverse);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* ---------- Sections (general) ---------- */
+main section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* ---------- Sobre mí ---------- */
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.about-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.about-text .quote {
+  align-self: flex-end;
+  max-width: 70%;
+  font-style: italic;
+  color: var(--accent);
+  border-left: 3px solid var(--accent);
+  padding-left: 0.75rem;
+}
+
+/* ---------- Proyectos ---------- */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  flex: 1 1 260px;
+  min-width: 260px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.project-link {
+  margin-top: auto;
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ---------- Habilidades ---------- */
+.chip-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+}
+
+.chip {
+  background: var(--accent-soft);
+  color: var(--text-primary);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+/* ---------- Contacto ---------- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 480px;
+  margin-top: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field input,
+.field textarea {
+  padding: 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font: inherit;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--bg-dark);
+  padding: 1.5rem;
+}
+
+.social-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-nav a {
+  color: var(--text-inverse);
+  text-decoration: none;
+}
+
+.social-nav a:hover {
+  color: var(--accent);
+}
+
+/* ---------- Responsive: pantallas pequeñas ---------- */
+@media (max-width: 700px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text .quote {
+    align-self: center;
+    max-width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
