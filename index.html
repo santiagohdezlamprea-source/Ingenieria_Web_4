@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santiago — Desarrollador de Software</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#top" class="brand">santiago.dev</a>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section id="sobre-mi" class="about">
+      <img
+        src="https://placehold.co/320x320"
+        alt="Foto de perfil de Santiago"
+        class="about-photo"
+      >
+      <div class="about-text">
+        <h1>Hola, soy Santiago</h1>
+        <p>
+          Soy estudiante de último semestre de Ingeniería de Software, enfocada en
+          desarrollo backend y bases de datos. Me interesa construir sistemas
+          confiables y aprender constantemente sobre arquitectura de software.
+        </p>
+        <p>
+          Actualmente busco mi primera oportunidad como desarrolladora junior,
+          combinando lo que aprendo en la universidad con proyectos personales.
+        </p>
+        <aside class="quote">
+          "El código que no se prueba, no funciona."
+        </aside>
+      </div>
+    </section>
+
+    <section id="proyectos" class="projects">
+      <h2>Proyectos</h2>
+      <div class="project-list">
+
+        <article class="project-card">
+          <img src="https://placehold.co/300x180" alt="Captura del proyecto Inventario API">
+          <h3>Inventario API</h3>
+          <p>API REST para gestión de inventarios con autenticación y control de stock en tiempo real.</p>
+          <a href="#" class="project-link">Ver proyecto</a>
+        </article>
+
+        <article class="project-card">
+          <img src="https://placehold.co/300x180" alt="Captura del proyecto Asistente de voz">
+          <h3>Asistente de voz</h3>
+          <p>Asistente personal tipo Jarvis con reconocimiento de voz y automatización de tareas.</p>
+          <a href="#" class="project-link">Ver proyecto</a>
+        </article>
+
+        <article class="project-card">
+          <img src="https://placehold.co/300x180" alt="Captura del proyecto Seguridad para agentes IA">
+          <h3>Seguridad para Agentes IA</h3>
+          <p>Plataforma que evalúa la seguridad de chatbots mediante ataques de prompt injection.</p>
+          <a href="#" class="project-link">Ver proyecto</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="habilidades" class="skills">
+      <h2>Habilidades</h2>
+      <ul class="chip-list">
+        <li class="chip">HTML</li>
+        <li class="chip">CSS</li>
+        <li class="chip">JavaScript</li>
+        <li class="chip">Java</li>
+        <li class="chip">SQL</li>
+        <li class="chip">MongoDB</li>
+        <li class="chip">Git</li>
+        <li class="chip">Python</li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>Contacto</h2>
+      <form class="contact-form">
+        <div class="field">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav class="social-nav">
+      <a href="#" aria-label="GitHub">GitHub</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="#" aria-label="Correo">Correo</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
